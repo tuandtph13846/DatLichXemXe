@@ -15,7 +15,7 @@ import {
 import React from "react";
 import styled from "styled-components";
 import carDemo from "../../../asset/client/images/cardemo.jpeg";
-import banner from "../../../components/client/Banner/Banner";
+
 
 const Product = () => {
   const { Sider, Content } = Layout;
@@ -71,13 +71,7 @@ const Product = () => {
   );
   return (
     <div className="bg-white">
-      <div>
-        <img
-          src={banner}
-          className="d-block mx-auto img-fluid w-100"
-          alt="..."
-        />
-      </div>
+     
       <ProductPage>
         <Sider className="site-layout-background " width={250}>
           <Menu
