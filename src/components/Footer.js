@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
         <symbol id="bootstrap" viewBox="0 0 118 94">
-          <title>Bootstrap</title>
+          
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -28,33 +28,33 @@ const Footer = () => {
         <footer className="py-5">
           <div className="row">
             <div className="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
+              <h5>Menu</h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <NavLink to="" className="nav-link p-0 text-muted">
+                  <NavLink to="/" className="nav-link p-0 text-muted">
                     Home
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
-                  <NavLink to="" className="nav-link p-0 text-muted">
-                    Features
+                  <NavLink to="/admin/dashboard" className="nav-link p-0 text-muted">
+                    Dashboard
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
-                  <NavLink to="" className="nav-link p-0 text-muted">
-                    Pricing
-                  </NavLink>
-                </li>
-                <li className="nav-item mb-2">
-                  <NavLink to="" className="nav-link p-0 text-muted">
-                    {" "}
-                    FAQs
-                  </NavLink>
-                </li>
-                <li className="nav-item mb-2">
-                  <NavLink to="" className="nav-link p-0 text-muted">
-                    {" "}
+                  <NavLink to="/about" className="nav-link p-0 text-muted">
                     About
+                  </NavLink>
+                </li>
+                <li className="nav-item mb-2">
+                  <NavLink to="/products" className="nav-link p-0 text-muted">
+                    {" "}
+                    Products
+                  </NavLink>
+                </li>
+                <li className="nav-item mb-2">
+                  <NavLink to="" className="nav-link p-0 text-muted">
+                    {" "}
+                    Customers
                   </NavLink>
                 </li>
               </ul>
@@ -93,34 +93,34 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
+              <h5>Thông tin</h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
                   <NavLink to="" className="nav-link p-0 text-muted">
                     {" "}
-                    Home
+                    Địa chỉ
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
                   <NavLink to="" className="nav-link p-0 text-muted">
                     {" "}
-                    Features
+                    Phone 
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
                   <NavLink to="" className="nav-link p-0 text-muted">
-                    Pricing
+                    Mã số thuế
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
                   <NavLink to="" className="nav-link p-0 text-muted">
-                    FAQs
+                   Giấy phép kinh doanh
                   </NavLink>
                 </li>
                 <li className="nav-item mb-2">
                   <NavLink to="" className="nav-link p-0 text-muted">
                     {" "}
-                    About
+                   Lĩnh vực
                   </NavLink>
                 </li>
               </ul>

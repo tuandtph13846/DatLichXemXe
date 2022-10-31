@@ -72,7 +72,7 @@ const AppHeader = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="" className="hover-2a nav-link text-black">
+                  <NavLink to="/about" className="hover-2a nav-link text-black">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width={24}
@@ -80,7 +80,7 @@ const AppHeader = () => {
                     >
                       <use xlinkHref="#table" />
                     </svg>
-                    Orders
+                    About
                   </NavLink>
                 </li>
                 <li>
@@ -125,12 +125,16 @@ const AppHeader = () => {
               />
             </form>
             <div className="text-end">
-              <button type="button" className="btn btn-light text-dark me-2">
+            <NavLink to="/signin">
+            <button type="button" className="btn btn-light text-dark me-2">
                 Login
               </button>
-              <button type="button" className="btn btn-primary">
+            </NavLink>
+             <NavLink to="/signup">
+             <button type="button" className="btn btn-primary">
                 Sign-up
               </button>
+             </NavLink>
             </div>
           </div>
         </div>
