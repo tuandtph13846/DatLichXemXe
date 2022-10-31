@@ -15,6 +15,7 @@ import AdminLayout from "./layouts/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import Aboutpage from "./pages/client/Aboutpage";
 import WebsiteLayout from "./layouts/client/WebsiteLayout";
+import Cart from "./pages/client/Cart";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
           <Route path="/products" element={<Product />} />
           <Route path="/productsd" element={<ProductDetail />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="about" element={<Aboutpage />} />
+          <Route path="/about" element={<Aboutpage />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
         <Route path="admin" element={<AdminLayout />}>
           <Route path="dashboard" element={<Dashboard />} />
