@@ -14,8 +14,8 @@ import {
 } from "antd";
 import React from "react";
 import styled from "styled-components";
-import carDemo from "../../anh/cardemo.jpeg";
-import banner from "../../anh/banner.jpg";
+import carDemo from "../../../asset/client/images/cardemo.jpeg";
+import banner from "../../../components/client/Banner/Banner";
 
 const Product = () => {
   const { Sider, Content } = Layout;

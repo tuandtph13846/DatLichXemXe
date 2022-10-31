@@ -5,17 +5,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/client/Homepage";
-import Product from "./pages/client/Product";
-import ProductDetail from "./pages/client/ProductDetail";
-import Signin from "./pages/client/Signin";
-import Signup from "./pages/client/Signup";
-import Booking from "./pages/client/Booking";
-import AdminLayout from "./layouts/admin/AdminLayout";
+
+import Product from "./pages/client/Product/Product";
+import ProductDetail from "./pages/client/ProductDetail/ProductDetail";
+import Signin from "./pages/client/Signin/Signin";
+import Signup from "./pages/client/Signup/Signup";
+import Booking from "./pages/client/Booking/Booking";
+import AdminLayout from "./layouts/admin/AdminLayout.jsx";
 import Dashboard from "./pages/admin/Dashboard";
-import Aboutpage from "./pages/client/Aboutpage";
-import WebsiteLayout from "./layouts/client/WebsiteLayout";
-import Cart from "./pages/client/Cart";
+import Aboutpage from "./pages/client/AboutPage/Aboutpage";
+import WebsiteLayout from "./layouts/client/WebsiteLayout.jsx";
+import Homepage from "./pages/client/Homepage/Homepage";
+
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/productsd" element={<ProductDetail />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/about" element={<Aboutpage />} />
-          <Route path="/cart" element={<Cart />} />
+          
         </Route>
         <Route path="admin" element={<AdminLayout />}>
           <Route path="dashboard" element={<Dashboard />} />

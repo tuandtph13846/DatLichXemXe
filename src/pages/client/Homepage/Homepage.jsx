@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Banner from "../../components/Banner";
-import logoMerc from "../../anh/Mercedes-Benz-Logo.png";
-import subBanner from "../../anh/subbanner1.jpg";
-import carDemo from "../../anh/cardemo.jpeg";
+import Banner from "../../../components/client/Banner/Banner"
+import logoMerc from "../../../asset/client/images/Mercedes-Benz-Logo.png";
+import subBanner from "../../../asset/client/images/subbanner1.jpg";
+import carDemo from "../../../asset/client/images/cardemo.jpeg";
 const Homepage = () => {
   return (
     <div>
-      <Banner />
+      <Banner/>
       <Categories className="categories px-4">
         <div className="categories-title text-center my-5">
           <h2 className="">Danh mục các hãng xe</h2>

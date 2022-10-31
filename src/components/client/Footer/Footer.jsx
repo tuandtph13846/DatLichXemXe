@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../asset/client/css/Footers.css";
+import "../../../asset/client/css/Footers.css";
 const Footer = () => {
   return (
     <div>

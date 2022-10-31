@@ -2,8 +2,8 @@ import { Breadcrumb } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import anh1 from "../../anh/ppo.jpg";
-import carDemo from "../../anh/cardemo.jpeg";
+import anh1 from "../../../asset/client/images/ppo.jpg";
+import carDemo from "../../../asset/client/images/cardemo.jpeg";
 const ProductDetail = () => {
   return (
     <div className="bg-light">

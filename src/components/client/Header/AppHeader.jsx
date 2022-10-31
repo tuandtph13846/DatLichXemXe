@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../anh/logovietphu.png'
-import '../asset/client/css/Headers.css'
+import logo from '../../../asset/client/images/logovietphu.png'
+import '../../../asset/client/css/Headers.css'
 const AppHeader = () => {
   return (
     <div>
