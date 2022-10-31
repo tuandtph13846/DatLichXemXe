@@ -1,17 +1,19 @@
 import React from "react";
 import { Layout } from "antd";
-import AppHeader from "../../components/AppHeader";
+
 import { Outlet } from "react-router-dom";
-import Footer from "../../components/Footer";
+
+import AppHeader from "../../components/client/Header/AppHeader";
+import Footer from "../../components/client/Footer/Footer";
 const WebsiteLayout = () => {
   const { Header, Content } = Layout;
   return (
     <Layout>
-      <AppHeader />
+      <AppHeader/>
       <Content className="">
         <Outlet />
       </Content>
-      <Footer />
+      <Footer/>
     </Layout>
   );
 };

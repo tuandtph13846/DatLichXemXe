@@ -1,7 +1,7 @@
 import { Button, Checkbox, DatePicker, Form, Input } from "antd";
 import React from "react";
 import styled from "styled-components";
-import bgBooking from "../../anh/bgbooking.jpg";
+import bgBooking from "../../../asset/client/images/bgbooking.jpg";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 
 const Booking = () => {
