@@ -8,7 +8,7 @@ const SideBar = () => {
           <ul>
             <div className="logo">
               <a href="index.html">
-                <img src="images/logo.png" alt="" /> <span>Focus</span>
+                <img src="images/logo.png" alt="" /> <span> Việt Phú Garage Auto</span>
               </a>
             </div>
             <li>
@@ -19,7 +19,7 @@ const SideBar = () => {
                 </Link>
             </li>
 
-            <li className="label">Apps</li>
+            <li className="label">Sản Phẩm</li>
             <li>
               <a className="sidebar-sub-toggle">
                 <i className="ti-bar-chart-alt"></i> Charts{" "}
