@@ -1,13 +1,15 @@
+import { Select } from "antd";
+import { Option } from "antd/lib/mentions";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../../../asset/client/images/logovietphu.png'
-import '../../../asset/client/css/Headers.css'
+import styled from "styled-components";
+import logo from "../../../asset/client/images/logovietphu.png";
+import "../../../asset/client/css/Headers.css";
 const AppHeader = () => {
   return (
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
         <symbol id="bootstrap" viewBox="0 0 118 94">
-          <title>Bootstrap</title>
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -37,105 +39,141 @@ const AppHeader = () => {
         <symbol id="grid" viewBox="0 0 16 16">
           <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
         </symbol>
+
+        <symbol id="cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+        <symbol id="date" viewBox="0 0 16 16">
+          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+        </symbol>
       </svg>
+      
       <header>
         <div className="px-3 py-2 ">
-          <div className="container">
-            <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-              <div className="d-flex align-items-center my-2 my-lg-0 me-lg-auto">
-              <NavLink to="/"><img src={logo} className="w-20 h-10" /></NavLink>
+          <div className=" align-items-center">
+            <ContainerGird>
+              <div className=" lign-items-center justify-content-center">
+                <NavLink to="/">
+                  <img src={logo} className=" w-40 h-20" />
+                </NavLink>
               </div>
-           
-              <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <NavLink to="" className="hover-2a nav-link text-black">
-                    <svg
-                      className="bi d-block mx-auto mb-1"
-                      width={24}
-                      height={24}
+              <div>
+                <form
+                  className="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto "
+                  role="search"
+                >
+                  <input
+                    type="search"
+                    className="form-control border border-secondary rounded"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+              <div>
+                <ul className=" nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <NavLink to="" className="hover-2a nav-link text-black">
+                      <svg
+                        className="bi d-block mx-auto mb-1"
+                        width={15}
+                        height={15}
+                      >
+                        <use xlinkHref="#home" />
+                      </svg>
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/admin"
+                      className="hover-2a nav-link text-black"
                     >
-                      <use xlinkHref="#home" />
-                    </svg>
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/admin/dashboard" className="hover-2a nav-link text-black">
-                    <svg
-                      className="bi d-block mx-auto mb-1"
-                      width={24}
-                      height={24}
+                      <svg
+                        className="bi d-block mx-auto mb-1"
+                        width={15}
+                        height={15}
+                      >
+                        <use xlinkHref="#speedometer2" />
+                      </svg>
+                      Dashboard
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/about"
+                      className="hover-2a nav-link text-black"
                     >
-                      <use xlinkHref="#speedometer2" />
-                    </svg>
-                    Dashboard
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about" className="hover-2a nav-link text-black">
-                    <svg
-                      className="bi d-block mx-auto mb-1"
-                      width={24}
-                      height={24}
+                      <svg
+                        className="bi d-block mx-auto mb-1"
+                        width={15}
+                        height={15}
+                      >
+                        <use xlinkHref="#table" />
+                      </svg>
+                      About
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/products"
+                      className="hover-2a nav-link text-black"
                     >
-                      <use xlinkHref="#table" />
-                    </svg>
-                    About
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/products" className="hover-2a nav-link text-black">
-                    <svg
-                      className="bi d-block mx-auto mb-1"
-                      width={24}
-                      height={24}
+                      <svg
+                        className="bi d-block mx-auto mb-1"
+                        width={15}
+                        height={15}
+                      >
+                        <use xlinkHref="#grid" />
+                      </svg>
+                      Products
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/booking"
+                      className="hover-2a nav-link text-black"
                     >
-                      <use xlinkHref="#grid" />
-                    </svg>
-                    Products
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="" className="hover-2a nav-link text-black">
-                    <svg
-                      className="bi d-block mx-auto mb-1"
-                      width={24}
-                      height={24}
-                    >
-                      <use xlinkHref="#people-circle" />
-                    </svg>
-                    Customers
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="px-3 py-2 border-bottom mb-3">
-          <div className="container d-flex flex-wrap justify-content-center">
-            <form
-              className="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto"
-              role="search"
-            >
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-            </form>
-            <div className="text-end">
-            <NavLink to="/signin">
-            <button type="button" className="btn btn-light text-dark me-2">
-                Login
-              </button>
-            </NavLink>
-             <NavLink to="/signup">
-             <button type="button" className="btn btn-primary">
-                Sign-up
-              </button>
-             </NavLink>
-            </div>
+                      <svg
+                        className="bi d-block mx-auto mb-1"
+                        width={15}
+                        height={15}
+                      >
+                        <use xlinkHref="#date" />
+                      </svg>
+                      Booking
+                    </NavLink>
+                  </li>
+                  <div className="menu-gold">
+                    <ul className="menu">
+                      <li>
+                        <NavLink to="" className="hover-2a nav-link text-black">
+                          <svg
+                            className="bi d-block mx-auto mb-1"
+                            width={15}
+                            height={15}
+                          >
+                            <use xlinkHref="#people-circle" />
+                          </svg>
+                          Customers
+                        </NavLink>
+                        <ul class="dropdown">
+                          <li>
+                            <a href="/signin">Signin</a>
+                          </li>
+                          <li>
+                            <a href="signup">Signup</a>
+                          </li>
+                          <li>
+                            <a href="#">Printers</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </ContainerGird>
           </div>
         </div>
       </header>
@@ -144,3 +182,8 @@ const AppHeader = () => {
 };
 
 export default AppHeader;
+const ContainerGird = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  align-items: center;
+`;
