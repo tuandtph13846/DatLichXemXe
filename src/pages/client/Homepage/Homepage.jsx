@@ -54,15 +54,7 @@ const Homepage = () => {
             </Link>
           </CategoryItem>
 
-          <CategoryItem className="col-sm-2 p-3 bg-light text-white">
-            <Link to="/">
-              <img
-                src={logoMerc}
-                alt=".."
-                className="d-block mx-auto img-fluid"
-              />
-            </Link>
-          </CategoryItem>
+          
 
           <CategoryItem className="col-sm-2 p-3 bg-light text-white">
             <Link to="/">
@@ -71,16 +63,7 @@ const Homepage = () => {
                 alt=".."
                 className="d-block mx-auto img-fluid"
               />
-            </Link>
-          </CategoryItem>
 
-          <CategoryItem className="col-sm-2 p-3 bg-light text-white">
-            <Link to="/">
-              <img
-                src={logoMerc}
-                alt=".."
-                className="d-block mx-auto img-fluid"
-              />
             </Link>
           </CategoryItem>
 
@@ -106,7 +89,7 @@ const Homepage = () => {
 
       <Fproduct className="px-5">
         <div className="categories-title text-center my-5">
-          <h2 className="">1 số sản phẩm</h2>
+          <h2 className="">Một số sản phẩm</h2>
         </div>
 
         <section className="text-center mb-4">

@@ -18,8 +18,8 @@ const ProductDetail = () => {
               alt=".."
               className="d-block mx-auto img-fluid w-100"
             />
-            <div className="row justify-content-between m-4">
-              <div className="col-sm-2">
+            <div className="row justify-content-between mt-4">
+              <div className="col-sm-3">
                 <img
                   src={carDemo}
                   alt=".."
@@ -27,7 +27,7 @@ const ProductDetail = () => {
                 />
               </div>
 
-              <div className="col-sm-2">
+              <div className="col-sm-3">
                 <img
                   src={carDemo}
                   alt=".."
@@ -35,7 +35,7 @@ const ProductDetail = () => {
                 />
               </div>
 
-              <div className="col-sm-2">
+              <div className="col-sm-3">
                 <img
                   src={carDemo}
                   alt=".."
@@ -43,7 +43,7 @@ const ProductDetail = () => {
                 />
               </div>
 
-              <div className="col-sm-2">
+              <div className="col-sm-3">
                 <img
                   src={carDemo}
                   alt=".."
@@ -64,20 +64,26 @@ const ProductDetail = () => {
             </h4>
             <h5>Hãng xe: Toyota</h5>
 
-            <div className=" my-3 row">
-              <button
+            <ProductDetailBooking>
+              <Link to="/booking">
+                <button 
                 className="btn btn-outline-success col-sm-2 mx-2"
                 type="button"
               >
                 Đặt lịch xem
               </button>
-              <button
+              </Link>
+              
+              <Link to="">
+                <button
                 className="btn btn-outline-success col-sm-2"
                 type="button"
               >
                 Đặt cọc
               </button>
-            </div>
+              </Link>
+              
+            </ProductDetailBooking>
           </div>
         </div>
         <div className="px-4">
@@ -262,3 +268,6 @@ export default ProductDetail;
 const PageContent = styled.div`
   padding: 40px;
 `;
+const ProductDetailBooking = styled.div`
+  margin: 30px 0;
+`

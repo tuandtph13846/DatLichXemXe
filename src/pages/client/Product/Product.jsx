@@ -16,7 +16,6 @@ import React from "react";
 import styled from "styled-components";
 import carDemo from "../../../asset/client/images/cardemo.jpeg";
 
-
 const Product = () => {
   const { Sider, Content } = Layout;
   const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
@@ -71,7 +70,6 @@ const Product = () => {
   );
   return (
     <div className="bg-white">
-     
       <ProductPage>
         <Sider className="site-layout-background " width={250}>
           <Menu
